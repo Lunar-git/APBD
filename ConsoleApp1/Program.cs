@@ -8,12 +8,12 @@ public class Program
     {
         if (numbers == null || numbers.Length == 0)
             return -1;
-        double sum = 0;
+        double sum1 = 0;
         foreach (int num in numbers)
         {
-            sum += num;
+            sum1 += num;
         }
-        return sum / numbers.Length;
+        return sum1 / numbers.Length;
     }
 }
 
