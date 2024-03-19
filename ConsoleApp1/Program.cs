@@ -1,8 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine("xddd");
+using System;
 
-Console.WriteLine("Modification1");
-Console.WriteLine("Modification2");
-Console.WriteLine("Modification3");
+public class MathUtils
+{
+    public static double CalculateAverage(int[] numbers)
+    {
+        if (numbers == null || numbers.Length == 0)
+            return -1;
+        double sum = 0;
+        foreach (int num in numbers)
+        {
+            sum += num;
+        }
+        return sum / numbers.Length;
+    }
+}
